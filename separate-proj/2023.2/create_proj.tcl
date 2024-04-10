@@ -471,11 +471,11 @@ set_property SYNTH_CHECKPOINT_MODE "Hierarchical" [get_files dest_address_fifo_4
 set cur_path [exec pwd]
 puts "Current path: $cur_path"
 
-source versal_cips_2023.2.tcl
+source scripts/versal_cips_2023.2.tcl
 make_wrapper -files [get_files ${_xil_proj_name_}/${_xil_proj_name_}.srcs/sources_1/bd/dcmac_0_cips/dcmac_0_cips.bd] -top
 add_files -norecurse ${_xil_proj_name_}/${_xil_proj_name_}.gen/sources_1/bd/dcmac_0_cips/hdl/dcmac_0_cips_wrapper.v
 
-source dcmac_gt_2023.2.tcl
+source scripts/dcmac_gt_2023.2.tcl
 make_wrapper -files [get_files ${_xil_proj_name_}/${_xil_proj_name_}.srcs/sources_1/bd/dcmac_0_exdes_support/dcmac_0_exdes_support.bd] -top
 add_files -norecurse ${_xil_proj_name_}/${_xil_proj_name_}.gen/sources_1/bd/dcmac_0_exdes_support/hdl/dcmac_0_exdes_support_wrapper.v
 
