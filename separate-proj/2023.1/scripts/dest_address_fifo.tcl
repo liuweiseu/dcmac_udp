@@ -55,7 +55,7 @@ set design_name dest_address_fifo_400g
 # This script was generated for a remote BD. To create a non-remote design,
 # change the variable <run_remote_bd_flow> to <0>.
 
-set run_remote_bd_flow 1
+set run_remote_bd_flow 0
 if { $run_remote_bd_flow == 1 } {
   # Set the reference directory for source file relative paths (by default 
   # the value is script directory path)
