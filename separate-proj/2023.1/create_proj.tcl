@@ -142,6 +142,11 @@ set files [list \
  [file normalize "${origin_dir}/fourhundred_gbe/kutleng_skarab2_bsp_firmware/casperbsp/sources/vhdl/rtl/arp/arpreceiver.vhd"] \
  [file normalize "${origin_dir}/fourhundred_gbe/delay.v"] \
  [file normalize "${origin_dir}/fourhundred_gbe/addr_shift.v"] \
+ [file normalize "${origin_dir}/fourhundred_gbe/kutleng_skarab2_bsp_firmware/casperbsp/sources/vhdl/rtl/lbustoaxis/lbusrxaxistx400g.vhd"] \
+ [file normalize "${origin_dir}/fourhundred_gbe/kutleng_skarab2_bsp_firmware/casperbsp/sources/vhdl/rtl/udp/macinterface/yellow_block_400gbe_udp_rx.vhd"] \
+ [file normalize "${origin_dir}/fourhundred_gbe/async.v"] \
+ [file normalize "${origin_dir}/fourhundred_gbe/kutleng_skarab2_bsp_firmware/casperbsp/sources/vhdl/rtl/lbustoaxis/maplbusdatatoaxis400g.vhd"] \
+ [file normalize "${origin_dir}/fourhundred_gbe/kutleng_skarab2_bsp_firmware/casperbsp/sources/vhdl/rtl/lbustoaxis/mapmtytotkeep.vhd"] \
 ]
 add_files -norecurse -fileset $obj $files
 
@@ -235,6 +240,8 @@ add_files -norecurse ${_xil_proj_name_}/${_xil_proj_name_}.gen/sources_1/bd/dcma
 source scripts/axispacketbufferfifo.tcl
 
 source scripts/dest_address_fifo.tcl
+
+source scripts/async_fifo1025b_512deep.tcl
 
 update_compile_order -fileset sources_1
 
