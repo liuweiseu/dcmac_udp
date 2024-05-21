@@ -7,7 +7,7 @@ TODO: The scripts is based on a created project, so it's not good.
 ### seperate-proj
 1. clone the vhdl source code repo
     ```
-    git clone -b rx_implement git@github.com:liuweiseu/fourhundred_gbe.git
+    git clone -b rx-implement git@github.com:liuweiseu/fourhundred_gbe.git
     ```
     Let's assume the repo is clone under the home directory(~/).
 2. cd to the vivado tcl scripts directory
